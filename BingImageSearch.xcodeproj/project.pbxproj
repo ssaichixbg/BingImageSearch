@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		6204252E21B102F200D40ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6204252D21B102F200D40ACC /* AppDelegate.swift */; };
-		6204253021B102F200D40ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6204252F21B102F200D40ACC /* ViewController.swift */; };
 		6204253321B102F200D40ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6204253121B102F200D40ACC /* Main.storyboard */; };
 		6204253521B102F300D40ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6204253421B102F300D40ACC /* Assets.xcassets */; };
 		6204253821B102F300D40ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6204253621B102F300D40ACC /* LaunchScreen.storyboard */; };
+		62EAEED121B104E100B4B576 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EAEED021B104E100B4B576 /* GalleryViewController.swift */; };
+		62EAEED321B104FE00B4B576 /* PhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EAEED221B104FE00B4B576 /* PhotoBrowserViewController.swift */; };
+		62EAEED621B108F800B4B576 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EAEED521B108F800B4B576 /* Image.swift */; };
+		62EAEED821B10A3900B4B576 /* BingImageSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EAEED721B10A3900B4B576 /* BingImageSearchService.swift */; };
+		62EAEEDA21B10B3600B4B576 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EAEED921B10B3600B4B576 /* Config.swift */; };
+		9582AE803D0C2D6F6E37741F /* Pods_BingImageSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496E805981FB0015208AF3DD /* Pods_BingImageSearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BB901DC449B97DC37B596FD /* Pods-BingImageSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageSearch/Pods-BingImageSearch.release.xcconfig"; sourceTree = "<group>"; };
+		496E805981FB0015208AF3DD /* Pods_BingImageSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingImageSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6204252A21B102F200D40ACC /* BingImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6204252D21B102F200D40ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6204252F21B102F200D40ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6204253221B102F200D40ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6204253421B102F300D40ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6204253721B102F300D40ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6204253921B102F300D40ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62EAEED021B104E100B4B576 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		62EAEED221B104FE00B4B576 /* PhotoBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserViewController.swift; sourceTree = "<group>"; };
+		62EAEED521B108F800B4B576 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		62EAEED721B10A3900B4B576 /* BingImageSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingImageSearchService.swift; sourceTree = "<group>"; };
+		62EAEED921B10B3600B4B576 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		75D68BD30B725D5DE9BA285E /* Pods-BingImageSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingImageSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingImageSearch/Pods-BingImageSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9582AE803D0C2D6F6E37741F /* Pods_BingImageSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		578A90DF911EB192B1D87EEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D68BD30B725D5DE9BA285E /* Pods-BingImageSearch.debug.xcconfig */,
+				2BB901DC449B97DC37B596FD /* Pods-BingImageSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6204252121B102F200D40ACC = {
 			isa = PBXGroup;
 			children = (
 				6204252C21B102F200D40ACC /* BingImageSearch */,
 				6204252B21B102F200D40ACC /* Products */,
+				578A90DF911EB192B1D87EEB /* Pods */,
+				ABEFF09BB85BEB1C5EA2C0FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,50 @@
 		6204252C21B102F200D40ACC /* BingImageSearch */ = {
 			isa = PBXGroup;
 			children = (
+				62EAEED421B108DD00B4B576 /* Models */,
+				62EAEECF21B103B300B4B576 /* Services */,
+				62EAEECE21B1039200B4B576 /* ViewControllers */,
 				6204252D21B102F200D40ACC /* AppDelegate.swift */,
-				6204252F21B102F200D40ACC /* ViewController.swift */,
 				6204253121B102F200D40ACC /* Main.storyboard */,
 				6204253421B102F300D40ACC /* Assets.xcassets */,
 				6204253621B102F300D40ACC /* LaunchScreen.storyboard */,
 				6204253921B102F300D40ACC /* Info.plist */,
+				62EAEED921B10B3600B4B576 /* Config.swift */,
 			);
 			path = BingImageSearch;
+			sourceTree = "<group>";
+		};
+		62EAEECE21B1039200B4B576 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62EAEED021B104E100B4B576 /* GalleryViewController.swift */,
+				62EAEED221B104FE00B4B576 /* PhotoBrowserViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62EAEECF21B103B300B4B576 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				62EAEED721B10A3900B4B576 /* BingImageSearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		62EAEED421B108DD00B4B576 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62EAEED521B108F800B4B576 /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABEFF09BB85BEB1C5EA2C0FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				496E805981FB0015208AF3DD /* Pods_BingImageSearch.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6204253C21B102F300D40ACC /* Build configuration list for PBXNativeTarget "BingImageSearch" */;
 			buildPhases = (
+				1152E91C7F2BB331D1AC4858 /* [CP] Check Pods Manifest.lock */,
 				6204252621B102F200D40ACC /* Sources */,
 				6204252721B102F200D40ACC /* Frameworks */,
 				6204252821B102F200D40ACC /* Resources */,
+				AD34405E120BB6CFA7067A6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +192,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1152E91C7F2BB331D1AC4858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BingImageSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD34405E120BB6CFA7067A6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BingImageSearch/Pods-BingImageSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingImageSearch/Pods-BingImageSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6204252621B102F200D40ACC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6204253021B102F200D40ACC /* ViewController.swift in Sources */,
+				62EAEED821B10A3900B4B576 /* BingImageSearchService.swift in Sources */,
+				62EAEED321B104FE00B4B576 /* PhotoBrowserViewController.swift in Sources */,
+				62EAEED621B108F800B4B576 /* Image.swift in Sources */,
 				6204252E21B102F200D40ACC /* AppDelegate.swift in Sources */,
+				62EAEED121B104E100B4B576 /* GalleryViewController.swift in Sources */,
+				62EAEEDA21B10B3600B4B576 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +399,12 @@
 		};
 		6204253D21B102F300D40ACC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D68BD30B725D5DE9BA285E /* Pods-BingImageSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BingImageSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +418,12 @@
 		};
 		6204253E21B102F300D40ACC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB901DC449B97DC37B596FD /* Pods-BingImageSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BingImageSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
